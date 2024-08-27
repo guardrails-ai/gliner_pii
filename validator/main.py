@@ -1,4 +1,4 @@
-from typing import Any, Callable, Dict, Optional
+from typing import Any, Callable, Dict, Optional, Union, Tuple
 
 from guardrails.validator_base import (
     FailResult,
@@ -6,43 +6,86 @@ from guardrails.validator_base import (
     ValidationResult,
     Validator,
     register_validator,
+    ErrorSpan,
 )
 
+from gliner import GLiNER
 
-@register_validator(name="guardrails/validator_template", data_type="string")
-class ValidatorTemplate(Validator):
-    """Validates that {fill in how you validator interacts with the passed value}.
+
+@register_validator(name="guardrails/gliner_pii", data_type="string")
+class GlinerPII(Validator):
+    """Validates that the input string contains no personally identifiable information (PII) based on the provided entities.
 
     **Key Properties**
 
     | Property                      | Description                       |
     | ----------------------------- | --------------------------------- |
-    | Name for `format` attribute   | `guardrails/validator_template`   |
+    | Name for `format` attribute   | `guardrails/gliner_pii`           |
     | Supported data types          | `string`                          |
-    | Programmatic fix              | {If you support programmatic fixes, explain it here. Otherwise `None`} |
+    | Programmatic fix              | Anonymizes the text by replacing PII with placeholders. |
 
     Args:
-        arg_1 (string): {Description of the argument here}
-        arg_2 (string): {Description of the argument here}
+
+        entities (list[str]): A list of entities that the model should detect.
+        model (str): The name of the GLiNER model to use. Defaults to "urchade/gliner_medium-v2.1".
     """  # noqa
 
-    # If you don't have any init args, you can omit the __init__ method.
+    DEFAULT_ENTITIES = [
+        "date",
+        "time",
+        "city",
+        "state",
+        "country",
+        "zip code",
+        "location",
+        "name",
+        "person",
+        "phone number",
+        "driver license",
+    ]
+
     def __init__(
         self,
-        arg_1: str,
-        arg_2: str,
+        entities: list[str] = DEFAULT_ENTITIES,
+        model: str = "urchade/gliner_medium-v2.1",
         on_fail: Optional[Callable] = None,
     ):
-        super().__init__(on_fail=on_fail, arg_1=arg_1, arg_2=arg_2)
-        self._arg_1 = arg_1
-        self._arg_2 = arg_2
+        super().__init__(on_fail=on_fail, entities=entities, model=model)
+        self.entities = entities
+        self.model = GLiNER.from_pretrained(model)
+
+    def anonymize(self, text: str, entities: list[str]) -> Tuple[str, list[ErrorSpan]]:
+        predictions = self.model.predict_entities(text, entities)
+
+        error_spans = [
+            ErrorSpan(start=p['start'], end=p['end'], reason=p['label'])
+            for p in predictions
+        ]
+
+        anonymized_text = text
+        for span in sorted(error_spans, key=lambda x: x.start, reverse=True):
+            start, end, entity = span.start, span.end, span.reason
+            entity_name = entity.replace(' ', '_').upper()
+            anonymized_text = (
+                f"{anonymized_text[:start]}<{entity_name}>{anonymized_text[end:]}"
+            )
+
+        return anonymized_text, error_spans
 
     def validate(self, value: Any, metadata: Dict = {}) -> ValidationResult:
-        """Validates that {fill in how you validator interacts with the passed value}."""
-        # Add your custom validator logic here and return a PassResult or FailResult accordingly.
-        if value != "pass": # FIXME
-            return FailResult(
-                error_message="{A descriptive but concise error message about why validation failed}",
-                fix_value="{The programmtic fix if applicable, otherwise remove this kwarg.}",
+        entities = metadata.get("entities", self.entities)
+        if entities is None:
+            raise ValueError(
+                "`entities` must be set in order to use the `GlinerPII` validator."
             )
-        return PassResult()
+
+        anonymized_text, error_spans = self.anonymize(text=value, entities=entities)
+
+        if len(error_spans) == 0:
+            return PassResult()
+        else:
+            return FailResult(
+                error_message=f"The following text contains PII:\n{value}",
+                fix_value=anonymized_text,
+                error_spans=error_spans,
+            )
