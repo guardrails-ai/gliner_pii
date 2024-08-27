@@ -14,22 +14,6 @@ from gliner import GLiNER
 
 @register_validator(name="guardrails/gliner_pii", data_type="string")
 class GlinerPII(Validator):
-    """Validates that the input string contains no personally identifiable information (PII) based on the provided entities.
-
-    **Key Properties**
-
-    | Property                      | Description                       |
-    | ----------------------------- | --------------------------------- |
-    | Name for `format` attribute   | `guardrails/gliner_pii`           |
-    | Supported data types          | `string`                          |
-    | Programmatic fix              | Anonymizes the text by replacing PII with placeholders. |
-
-    Args:
-
-        entities (list[str]): A list of entities that the model should detect.
-        model (str): The name of the GLiNER model to use. Defaults to "urchade/gliner_medium-v2.1".
-    """  # noqa
-
     DEFAULT_ENTITIES = [
         "date",
         "time",
@@ -43,6 +27,20 @@ class GlinerPII(Validator):
         "phone number",
         "driver license",
     ]
+    """Validates that the input string contains no personally identifiable information (PII) based on the provided entities.
+
+    **Key Properties**
+
+    | Property                      | Description                       |
+    | ----------------------------- | --------------------------------- |
+    | Name for `format` attribute   | `guardrails/gliner_pii`           |
+    | Supported data types          | `string`                          |
+    | Programmatic fix              | Anonymizes the text by replacing PII with placeholders. |
+
+    Args:
+        entities (list[str]): A list of entities that the model should detect.
+        model (str): The name of the GLiNER model to use. Defaults to "urchade/gliner_medium-v2.1".
+    """  # noqa
 
     def __init__(
         self,
@@ -58,14 +56,14 @@ class GlinerPII(Validator):
         predictions = self.model.predict_entities(text, entities)
 
         error_spans = [
-            ErrorSpan(start=p['start'], end=p['end'], reason=p['label'])
+            ErrorSpan(start=p["start"], end=p["end"], reason=p["label"])
             for p in predictions
         ]
 
         anonymized_text = text
         for span in sorted(error_spans, key=lambda x: x.start, reverse=True):
             start, end, entity = span.start, span.end, span.reason
-            entity_name = entity.replace(' ', '_').upper()
+            entity_name = entity.replace(" ", "_").upper()
             anonymized_text = (
                 f"{anonymized_text[:start]}<{entity_name}>{anonymized_text[end:]}"
             )
