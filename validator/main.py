@@ -1,4 +1,4 @@
-from typing import Any, Callable, Dict, Optional, Union, Tuple
+from typing import Any, Callable, Dict, Optional, Tuple
 
 from guardrails.validator_base import (
     FailResult,
