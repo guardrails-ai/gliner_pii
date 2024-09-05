@@ -47,13 +47,24 @@ class GlinerPII(Validator):
         entities: list[str] = DEFAULT_ENTITIES,
         model: str = "urchade/gliner_medium-v2.1",
         on_fail: Optional[Callable] = None,
+        use_local: bool = True,
     ):
-        super().__init__(on_fail=on_fail, entities=entities, model=model)
+        super().__init__(on_fail=on_fail, entities=entities, model=model, use_local=use_local)
         self.entities = entities
         self.model = GLiNER.from_pretrained(model)
 
-    def anonymize(self, text: str, entities: list[str]) -> Tuple[str, list[ErrorSpan]]:
+    def _inference_remote(self, model_input: Any):
+        raise NotImplementedError("Remote inference is not supported for GlinerPII validator.")
+
+    def _inference_local(self, model_input: Any):
+        text = model_input["text"]
+        entities = model_input["entities"]
         predictions = self.model.predict_entities(text, entities)
+        return predictions
+
+
+    def anonymize(self, text: str, entities: list[str]) -> Tuple[str, list[ErrorSpan]]:
+        predictions = self._inference({"text": text, "entities": entities})
 
         error_spans = [
             ErrorSpan(start=p["start"], end=p["end"], reason=p["label"])
@@ -70,14 +81,14 @@ class GlinerPII(Validator):
 
         return anonymized_text, error_spans
 
-    def validate(self, value: Any, metadata: Dict = {}) -> ValidationResult:
+    def _validate(self, value: Any, metadata: Dict = {}) -> ValidationResult:
         entities = metadata.get("entities", self.entities)
         if entities is None:
             raise ValueError(
                 "`entities` must be set in order to use the `GlinerPII` validator."
             )
 
-        anonymized_text, error_spans = self.anonymize(text=value, entities=entities)
+        anonymized_text, error_spans = self.anonymize(value, entities)
 
         if len(error_spans) == 0:
             return PassResult()
