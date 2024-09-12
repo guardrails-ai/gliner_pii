@@ -1,0 +1,1238 @@
+[
+  {
+    "title": "Any",
+    "latency_cpu_sec": 0.5031069782045152,
+    "latency_cpu_stddev": 0.07066688912877893,
+    "latency_gpu_sec": 0.04604286776648627,
+    "latency_gpu_stddev": 0.009320909259223801,
+    "tpr_at_default": 0.7203912091786517,
+    "fpr_at_default": null,
+    "f1_at_default": 0.6180563542265669,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.1,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.2,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.4,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.5,
+        "tp": 196151,
+        "fp": 166300,
+        "tn": null,
+        "fn": 76133
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 182936,
+        "fp": 136452,
+        "tn": null,
+        "fn": 89348
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 165330,
+        "fp": 106590,
+        "tn": null,
+        "fn": 106952
+      },
+      {
+        "threshold": 0.8,
+        "tp": 139223,
+        "fp": 74944,
+        "tn": null,
+        "fn": 133059
+      },
+      {
+        "threshold": 0.9,
+        "tp": 95588,
+        "fp": 40949,
+        "tn": null,
+        "fn": 176694
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 272282
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04639774865477624,
+        "latency_seconds_stddev": 0.016600110007970657,
+        "latency_seconds_min": 0.04297184944152832,
+        "latency_seconds_max": 0.23950910568237305
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04598010843450373,
+        "latency_seconds_stddev": 0.002106845727133014,
+        "latency_seconds_min": 0.043085575103759766,
+        "latency_seconds_max": 0.06890439987182617
+      },
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.04418008327484131,
+        "latency_seconds_stddev": 0.0007284980872164202,
+        "latency_seconds_min": 0.0430455207824707,
+        "latency_seconds_max": 0.045384883880615234
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04567009669083815,
+        "latency_seconds_stddev": 0.0014706312024950685,
+        "latency_seconds_min": 0.043645620346069336,
+        "latency_seconds_max": 0.04974508285522461
+      },
+      {
+        "input_length_chars": 100,
+        "latency_seconds": 0.044522881507873535,
+        "latency_seconds_stddev": 6.377696990966797e-05,
+        "latency_seconds_min": 0.04445910453796387,
+        "latency_seconds_max": 0.0445866584777832
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "US_SSN",
+    "latency_cpu_sec": 0.0026039905831963294,
+    "latency_cpu_stddev": 0.05476641787414536,
+    "latency_gpu_sec": 0.0002395038693319123,
+    "latency_gpu_stddev": 0.0013086084173795794,
+    "tpr_at_default": 0.6989424355645621,
+    "fpr_at_default": null,
+    "f1_at_default": 0.6262305313625919,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.1,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.2,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.4,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.5,
+        "tp": 11037,
+        "fp": 8421,
+        "tn": null,
+        "fn": 4754
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 9704,
+        "fp": 7052,
+        "tn": null,
+        "fn": 6087
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 8232,
+        "fp": 5710,
+        "tn": null,
+        "fn": 7559
+      },
+      {
+        "threshold": 0.8,
+        "tp": 6406,
+        "fp": 4281,
+        "tn": null,
+        "fn": 9385
+      },
+      {
+        "threshold": 0.9,
+        "tp": 3820,
+        "fp": 2690,
+        "tn": null,
+        "fn": 11971
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 15791
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04573872781568958,
+        "latency_seconds_stddev": 0.0011280390442228812,
+        "latency_seconds_min": 0.04352688789367676,
+        "latency_seconds_max": 0.04829740524291992
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04484888712565104,
+        "latency_seconds_stddev": 0.001498254346947681,
+        "latency_seconds_min": 0.043459177017211914,
+        "latency_seconds_max": 0.049588918685913086
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04460644721984863,
+        "latency_seconds_stddev": 0.0006875210550977285,
+        "latency_seconds_min": 0.043645620346069336,
+        "latency_seconds_max": 0.04544854164123535
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "PERSON",
+    "latency_cpu_sec": 0.0013466155294326399,
+    "latency_cpu_stddev": 0.05682080890165287,
+    "latency_gpu_sec": 0.00012807536918293112,
+    "latency_gpu_stddev": 0.001454258311216153,
+    "tpr_at_default": 0.6491220473293351,
+    "fpr_at_default": null,
+    "f1_at_default": 0.444202447624974,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.1,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.2,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.4,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.5,
+        "tp": 31915,
+        "fp": 71803,
+        "tn": null,
+        "fn": 14272
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 29981,
+        "fp": 58820,
+        "tn": null,
+        "fn": 16206
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 26537,
+        "fp": 45089,
+        "tn": null,
+        "fn": 19650
+      },
+      {
+        "threshold": 0.8,
+        "tp": 20054,
+        "fp": 30345,
+        "tn": null,
+        "fn": 26133
+      },
+      {
+        "threshold": 0.9,
+        "tp": 9811,
+        "fp": 15295,
+        "tn": null,
+        "fn": 36376
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 46187
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04543426831563314,
+        "latency_seconds_stddev": 0.001664256049185587,
+        "latency_seconds_min": 0.0438840389251709,
+        "latency_seconds_max": 0.05241513252258301
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.045132716496785484,
+        "latency_seconds_stddev": 0.0010274958959922552,
+        "latency_seconds_min": 0.04380512237548828,
+        "latency_seconds_max": 0.04694318771362305
+      },
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.04422163963317871,
+        "latency_seconds_stddev": 0.00038933753967285156,
+        "latency_seconds_min": 0.04383230209350586,
+        "latency_seconds_max": 0.04461097717285156
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "US_PASSPORT",
+    "latency_cpu_sec": 0.0018332940918369066,
+    "latency_cpu_stddev": 0.08503062557362319,
+    "latency_gpu_sec": 0.00016122640407271538,
+    "latency_gpu_stddev": 0.0012552575747388915,
+    "tpr_at_default": 0.5365052371197774,
+    "fpr_at_default": null,
+    "f1_at_default": 0.5394345671815798,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.1,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.2,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.4,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.5,
+        "tp": 13881,
+        "fp": 11711,
+        "tn": null,
+        "fn": 11992
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 12345,
+        "fp": 9973,
+        "tn": null,
+        "fn": 13528
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 10803,
+        "fp": 8225,
+        "tn": null,
+        "fn": 15070
+      },
+      {
+        "threshold": 0.8,
+        "tp": 8884,
+        "fp": 6314,
+        "tn": null,
+        "fn": 16989
+      },
+      {
+        "threshold": 0.9,
+        "tp": 6422,
+        "fp": 3947,
+        "tn": null,
+        "fn": 19451
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 25873
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.045561282865462766,
+        "latency_seconds_stddev": 0.0011186575533240351,
+        "latency_seconds_min": 0.04394268989562988,
+        "latency_seconds_max": 0.04881572723388672
+      },
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.04433488845825195,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.04433488845825195,
+        "latency_seconds_max": 0.04433488845825195
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04430380889347622,
+        "latency_seconds_stddev": 0.0004641822866664431,
+        "latency_seconds_min": 0.043318986892700195,
+        "latency_seconds_max": 0.04539036750793457
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04613369703292847,
+        "latency_seconds_stddev": 0.002091298894513403,
+        "latency_seconds_min": 0.044677019119262695,
+        "latency_seconds_max": 0.04974508285522461
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "LOCATION",
+    "latency_cpu_sec": 0.001502695469559021,
+    "latency_cpu_stddev": 0.06623580865989001,
+    "latency_gpu_sec": 0.00013461747776489507,
+    "latency_gpu_stddev": 0.0034721075098131473,
+    "tpr_at_default": 0.7562773137493212,
+    "fpr_at_default": null,
+    "f1_at_default": 0.6899716306200567,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.1,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.2,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.4,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.5,
+        "tp": 58492,
+        "fp": 33715,
+        "tn": null,
+        "fn": 18850
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 54990,
+        "fp": 27118,
+        "tn": null,
+        "fn": 22352
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 50580,
+        "fp": 20869,
+        "tn": null,
+        "fn": 26762
+      },
+      {
+        "threshold": 0.8,
+        "tp": 44280,
+        "fp": 14461,
+        "tn": null,
+        "fn": 33062
+      },
+      {
+        "threshold": 0.9,
+        "tp": 33359,
+        "fp": 7543,
+        "tn": null,
+        "fn": 43983
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 77342
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04501742124557495,
+        "latency_seconds_stddev": 0.0008198849634232695,
+        "latency_seconds_min": 0.04330039024353027,
+        "latency_seconds_max": 0.0467829704284668
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04682706142293996,
+        "latency_seconds_stddev": 0.004381911021445713,
+        "latency_seconds_min": 0.04414200782775879,
+        "latency_seconds_max": 0.06890439987182617
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04605832099914551,
+        "latency_seconds_stddev": 0.000519711085952951,
+        "latency_seconds_min": 0.04539918899536133,
+        "latency_seconds_max": 0.04665088653564453
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "IP_ADDRESS",
+    "latency_cpu_sec": 0.002979399780450462,
+    "latency_cpu_stddev": 0.07558777737175784,
+    "latency_gpu_sec": 0.0002609617445445039,
+    "latency_gpu_stddev": 0.0016793957394412194,
+    "tpr_at_default": 0.45064134363262703,
+    "fpr_at_default": null,
+    "f1_at_default": 0.5160897617984823,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.1,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.2,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.4,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.5,
+        "tp": 6359,
+        "fp": 4173,
+        "tn": null,
+        "fn": 7752
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 6263,
+        "fp": 3246,
+        "tn": null,
+        "fn": 7848
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 6109,
+        "fp": 2418,
+        "tn": null,
+        "fn": 8002
+      },
+      {
+        "threshold": 0.8,
+        "tp": 5904,
+        "fp": 1655,
+        "tn": null,
+        "fn": 8207
+      },
+      {
+        "threshold": 0.9,
+        "tp": 5346,
+        "fp": 867,
+        "tn": null,
+        "fn": 8765
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 14111
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04599621716667624,
+        "latency_seconds_stddev": 0.0016723777535210202,
+        "latency_seconds_min": 0.043085575103759766,
+        "latency_seconds_max": 0.05033397674560547
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04547602480108088,
+        "latency_seconds_stddev": 0.0016328742502014818,
+        "latency_seconds_min": 0.04297184944152832,
+        "latency_seconds_max": 0.04983234405517578
+      },
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.04474294185638428,
+        "latency_seconds_stddev": 0.00033795833587646484,
+        "latency_seconds_min": 0.04440498352050781,
+        "latency_seconds_max": 0.04508090019226074
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04809772968292236,
+        "latency_seconds_stddev": 0.0001035928726196289,
+        "latency_seconds_min": 0.047994136810302734,
+        "latency_seconds_max": 0.04820132255554199
+      },
+      {
+        "input_length_chars": 100,
+        "latency_seconds": 0.0445866584777832,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.0445866584777832,
+        "latency_seconds_max": 0.0445866584777832
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "PHONE_NUMBER",
+    "latency_cpu_sec": 0.003138682553953536,
+    "latency_cpu_stddev": 0.06077165378754548,
+    "latency_gpu_sec": 0.0002798165999003886,
+    "latency_gpu_stddev": 0.0018769881228362653,
+    "tpr_at_default": 0.8963738792351027,
+    "fpr_at_default": null,
+    "f1_at_default": 0.7739261492087414,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.1,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.2,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.4,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.5,
+        "tp": 11297,
+        "fp": 5294,
+        "tn": null,
+        "fn": 1306
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 11010,
+        "fp": 4391,
+        "tn": null,
+        "fn": 1593
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 10597,
+        "fp": 3508,
+        "tn": null,
+        "fn": 2004
+      },
+      {
+        "threshold": 0.8,
+        "tp": 9967,
+        "fp": 2531,
+        "tn": null,
+        "fn": 2634
+      },
+      {
+        "threshold": 0.9,
+        "tp": 8048,
+        "fp": 1397,
+        "tn": null,
+        "fn": 4553
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 12601
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.043580055236816406,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.043580055236816406,
+        "latency_seconds_max": 0.043580055236816406
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.045890651643276215,
+        "latency_seconds_stddev": 0.0021419250728907553,
+        "latency_seconds_min": 0.04315185546875,
+        "latency_seconds_max": 0.05527138710021973
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04515989124774933,
+        "latency_seconds_stddev": 0.0010486333961195274,
+        "latency_seconds_min": 0.043337345123291016,
+        "latency_seconds_max": 0.04751873016357422
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04698538780212402,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.04698538780212402,
+        "latency_seconds_max": 0.04698538780212402
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "US_DRIVER_LICENSE",
+    "latency_cpu_sec": 0.0027149438462644865,
+    "latency_cpu_stddev": 0.06897654689772316,
+    "latency_gpu_sec": 0.0002540690125253993,
+    "latency_gpu_stddev": 0.0016804631587699031,
+    "tpr_at_default": 0.6463470770040113,
+    "fpr_at_default": null,
+    "f1_at_default": 0.586578342732671,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.1,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.2,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.4,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.5,
+        "tp": 9829,
+        "fp": 8477,
+        "tn": null,
+        "fn": 5378
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 8363,
+        "fp": 7777,
+        "tn": null,
+        "fn": 6844
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 6757,
+        "fp": 7016,
+        "tn": null,
+        "fn": 8450
+      },
+      {
+        "threshold": 0.8,
+        "tp": 5022,
+        "fp": 6070,
+        "tn": null,
+        "fn": 10185
+      },
+      {
+        "threshold": 0.9,
+        "tp": 2913,
+        "fp": 4677,
+        "tn": null,
+        "fn": 12294
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 15207
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04560100237528483,
+        "latency_seconds_stddev": 0.0012592995263600918,
+        "latency_seconds_min": 0.04372715950012207,
+        "latency_seconds_max": 0.04811716079711914
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04616411994485294,
+        "latency_seconds_stddev": 0.0018134129811334407,
+        "latency_seconds_min": 0.04369235038757324,
+        "latency_seconds_max": 0.05148148536682129
+      },
+      {
+        "input_length_chars": 100,
+        "latency_seconds": 0.04445910453796387,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.04445910453796387,
+        "latency_seconds_max": 0.04445910453796387
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "EMAIL_ADDRESS",
+    "latency_cpu_sec": 0.0026591498519638462,
+    "latency_cpu_stddev": 0.08339840685334587,
+    "latency_gpu_sec": 0.0002347748364950159,
+    "latency_gpu_stddev": 0.0015046206537402142,
+    "tpr_at_default": 0.9115406409368507,
+    "fpr_at_default": null,
+    "f1_at_default": 0.7849920026025429,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.1,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.2,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.4,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.5,
+        "tp": 14478,
+        "fp": 6526,
+        "tn": null,
+        "fn": 1405
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 14332,
+        "fp": 5117,
+        "tn": null,
+        "fn": 1551
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 13987,
+        "fp": 3859,
+        "tn": null,
+        "fn": 1896
+      },
+      {
+        "threshold": 0.8,
+        "tp": 13200,
+        "fp": 2580,
+        "tn": null,
+        "fn": 2683
+      },
+      {
+        "threshold": 0.9,
+        "tp": 10538,
+        "fp": 1241,
+        "tn": null,
+        "fn": 5345
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 15883
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.043523947397867836,
+        "latency_seconds_stddev": 0.0005806135926991674,
+        "latency_seconds_min": 0.0430455207824707,
+        "latency_seconds_max": 0.044341087341308594
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.04599703275240385,
+        "latency_seconds_stddev": 0.0015457539862943847,
+        "latency_seconds_min": 0.0440828800201416,
+        "latency_seconds_max": 0.04985618591308594
+      },
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.04470511583181528,
+        "latency_seconds_stddev": 0.000917137173049428,
+        "latency_seconds_min": 0.04340100288391113,
+        "latency_seconds_max": 0.04601693153381348
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.0450916588306427,
+        "latency_seconds_stddev": 0.0012405703681116185,
+        "latency_seconds_min": 0.044031381607055664,
+        "latency_seconds_max": 0.0472562313079834
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  },
+  {
+    "title": "DATE_TIME",
+    "latency_cpu_sec": 0.000992142750899333,
+    "latency_cpu_stddev": 0.06230935684077666,
+    "latency_gpu_sec": 0.00010057911095066291,
+    "latency_gpu_stddev": 0.027182284138759227,
+    "tpr_at_default": 0.78850406800982,
+    "fpr_at_default": null,
+    "f1_at_default": 0.7450014377456148,
+    "auc": null,
+    "roc_points": [
+      {
+        "threshold": 0.0,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.1,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.2,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.30000000000000004,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.4,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.5,
+        "tp": 38863,
+        "fp": 16180,
+        "tn": null,
+        "fn": 10424
+      },
+      {
+        "threshold": 0.6000000000000001,
+        "tp": 35948,
+        "fp": 12958,
+        "tn": null,
+        "fn": 13339
+      },
+      {
+        "threshold": 0.7000000000000001,
+        "tp": 31728,
+        "fp": 9896,
+        "tn": null,
+        "fn": 17559
+      },
+      {
+        "threshold": 0.8,
+        "tp": 25506,
+        "fp": 6707,
+        "tn": null,
+        "fn": 23781
+      },
+      {
+        "threshold": 0.9,
+        "tp": 15331,
+        "fp": 3292,
+        "tn": null,
+        "fn": 33956
+      },
+      {
+        "threshold": 1.0,
+        "tp": 0,
+        "fp": 0,
+        "tn": null,
+        "fn": 49287
+      }
+    ],
+    "latency_curve": [
+      {
+        "input_length_chars": 300,
+        "latency_seconds": 0.054887432801096064,
+        "latency_seconds_stddev": 0.04352701504249322,
+        "latency_seconds_min": 0.04325437545776367,
+        "latency_seconds_max": 0.23950910568237305
+      },
+      {
+        "input_length_chars": 400,
+        "latency_seconds": 0.046262196132114956,
+        "latency_seconds_stddev": 0.0012821967455194933,
+        "latency_seconds_min": 0.04369497299194336,
+        "latency_seconds_max": 0.04931807518005371
+      },
+      {
+        "input_length_chars": 200,
+        "latency_seconds": 0.045384883880615234,
+        "latency_seconds_stddev": 0.0,
+        "latency_seconds_min": 0.045384883880615234,
+        "latency_seconds_max": 0.045384883880615234
+      },
+      {
+        "input_length_chars": 500,
+        "latency_seconds": 0.04512810707092285,
+        "latency_seconds_stddev": 0.0003485679626464844,
+        "latency_seconds_min": 0.04477953910827637,
+        "latency_seconds_max": 0.045476675033569336
+      }
+    ],
+    "gpu_mem_idle_mb": 1699.310546875,
+    "disk_space_mb": 0.0,
+    "benchmark_cpu": "",
+    "benchmark_gpu": "",
+    "notes": ""
+  }
+]
